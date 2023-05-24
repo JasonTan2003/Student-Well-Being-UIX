@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Homepage.css">
+    <title>BrainBoost</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo">BrainBoost</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="" class="nav-links">Features <span class="dropdown-arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="dropdown-box">
+                                <a href="#">Digital Well-Being</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-box">
+                                <a href="#">Mindfulness Exercise</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-box">
+                                <a href="#">Articles</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-box">
+                                <a href="#">Meeting and Making Report</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-box">
+                                <a href="#">Articles</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-box">
+                                <a href="#">Help</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="" class="nav-links">Pricing</a></li>
+                <li><a href="" class="nav-links">Resources</a></li>
+                <li><a class="nav-links nav-links-btn" id="loginButton">Login</a></li>
+                <li><a class="nav-links nav-links-btn" id="getStartedButton">Get Started</a></li>
+            </ul>
+        </nav>
+        <!-- Login Modal Page Rendering Info Start-->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Log in to BrainBoost</h2>
+                <form id="loginForm">
+                    <input type="email" placeholder="Enter email" id="email" required>
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                    <input type="submit" value="Continue">
+                    <p>OR</p>
+                    <div class="oauth-buttons">
+                        <button id="login-microsoft" class="oauth-button"><span id="microsoft-icon"></span>Login with Microsoft</button>
+                        <button id="login-google" class="oauth-button"><span id="google-icon"></span>Login with Google</button>
+                    </div>
+                </form>
+                <br><br><br>
+                <p>Don't have an account? <a href="#" id="signupLink">Sign up for an account</a></p>
+            </div>
+        </div>
+        <!-- Login Modal Page Rendering Info End -->
+        <!-- Get Started Modal Page Rendering Info Start-->
+        <div id="getStartedModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Sign up for your account</h2>
+                <form id="getStartedForm">
+                    <input type="email" placeholder="Enter email" id="email" required>
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                    <p>By clicking “continue”  below you agree to the BrainBoost Terms & Conditions and acknowledge the Privacy Policy. </p>
+                    <input type="submit" value="Continue">
+                    <p>OR</p>
+                    <div class="oauth-buttons">
+                        <button id="login-microsoft" class="oauth-button"><span id="microsoft-icon"></span>Continue with Microsoft</button>
+                        <button id="login-google" class="oauth-button"><span id="google-icon"></span>Continue with Google</button>
+                    </div>
+                </form>
+                <br><br><br>
+                <a href="#" id="signupLink">Already have an account? Log in</a>
+            </div>
+        </div>
+        <!-- Get Started Modal Page Rendering Info End-->
+    </div>
+    <script src="Modal.js"></script>
+</body>
+</html>
