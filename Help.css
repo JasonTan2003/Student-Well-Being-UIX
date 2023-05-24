@@ -1,0 +1,137 @@
+:root {
+    --white: #FFFFFF;
+    --red: #FF0000;
+    --black: #000000;
+    --lightgreen: #5aac44;
+
+    --linkblue: #0052cc;
+    --communitycolor: linear-gradient(90deg, #FF6E7F 0%, #BFE9FF 100%);
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.top-section .header-title {
+    padding-top: 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.first-helplines h2 {
+    padding-top: 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.first-helplines p {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.first-helplines a {
+    text-decoration: none;
+    color: var(--linkblue);
+}
+
+.first-helplines a:hover {
+    color: var(--red);
+}
+
+.first-helplines .fa-arrow-right {
+    color: var(--lightgreen);
+}
+
+.first-helplines i:hover {
+    color: var(--red);
+}
+
+.listening-services h2 {
+    padding-top: 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.listening-services h3 {
+    padding-top: 16px;
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.top-section ul li {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.emergency-helplines {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    color: #212b32;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.emergency-container {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    background-color: #212b32;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.emergency-number {
+    background-color: #d5281b;
+    border-radius: 10px;
+}
+
+.emergency-number h3 {
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.emergency-info p {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.community-section {
+    background: var(--communitycolor);
+    margin-top: 30px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.get-in-touch {
+    position: absolute;
+    padding-top: 50px;
+}
+
+.get-in-touch a {
+    text-decoration: none;
+    color: var(--linkblue);
+}
