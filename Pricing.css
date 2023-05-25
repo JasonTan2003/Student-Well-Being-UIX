@@ -1,0 +1,187 @@
+.top-section .header-title h1 {
+    font-size: 2rem;
+    font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.25;
+}
+
+.top-section .header-title p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.plan-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.plans-option {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plans-option > div {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.plans-option h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plans-option div > div:first-child {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.plans-option div > div:first-child span {
+    font-weight: bold;
+}
+
+.plans-option div p {
+    margin-bottom: 20px;
+}
+
+.plans-option .plan-texts {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.plans-option .price-texts {
+    color: grey;
+}
+
+.plans-option button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.plans-option button:hover {
+    background-color: #2980b9;
+}
+
+@media screen and (max-width: 768px) {
+    .plans-option {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .plans-option > div {
+      margin-bottom: 30px;
+    }
+}
+
+.compare-plan-container {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.compare-plan-container h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+    text-align: center;
+    color: rgb(9, 30, 66);
+    width: 80%;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid rgb(223, 225, 230);
+    padding: 8px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: rgb(255, 255, 255) 1px 0px 0px 0px;
+    filter: drop-shadow(rgb(223, 225, 230) 0px 1px 0px);
+}
+
+.fa-check {
+    color: lightgreen;
+}
+
+.compare-table th p {
+    color: rgb(9, 30, 66);
+    font-size: 1rem;
+    text-align: left;
+}
+
+.compare-table th .sub-p {
+    margin: 0px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.suggestion-section {
+    margin-top: 100px;
+    background-color: #BFE9FF;
+}
+
+.suggestion-container {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.suggestion-images {
+    flex: 0 0 auto;
+}
+
+.suggestion-section .megaphone {
+    width: 400px;
+    height: 200px;
+    max-width: 40%;
+    transform: rotate(45deg);
+    margin-right: 20px;
+}
+
+.suggestion-section .rocket {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 250px;
+    height: 150px;
+    max-width: 30%;
+    transform: rotate(-45deg); 
+}
+
+.suggestion-text {
+    flex: 1;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.suggestion-text button {
+    width: 150px;
+    height: 20px;
+    border-radius: 3px;
+    border-style: hidden;
+}
+
+.suggestion-text button:hover {
+    background-color: #5aac44;
+}

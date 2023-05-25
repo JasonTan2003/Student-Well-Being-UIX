@@ -1,3 +1,4 @@
+@import url("Pricing.css");
 @import url("Help.css");
 
 :root {
@@ -9,6 +10,11 @@
     --linkblue: #0052cc;
 }
 
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
     margin: 0;
