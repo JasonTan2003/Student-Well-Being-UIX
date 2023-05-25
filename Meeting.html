@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="BrainBoost.css">
     <title>BrainBoost</title>
 </head>
 <body>
@@ -41,11 +42,6 @@
                         <li>
                             <div class="dropdown-box">
                                 <a href="Meeting.html">Meeting and Making Report</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown-box">
-                                <a href="Articles.html">Articles</a>
                             </div>
                         </li>
                         <li>
@@ -103,6 +99,66 @@
         </div>
         <!-- Get Started Modal Page Rendering Info End-->
     </div>
+    <section class="report-container">
+        <div class="availability-column">
+            <h2>Availability</h2>
+            <div>
+                <h2>August, 2023</h2>
+                <span><i class="fa-solid fa-arrow-left"></i></span>
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <div>
+                <p>From <br> 5.5.23</p>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div>
+                <p>From <br> 15.5.23</p>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="report-column">
+            <div class="report-container">
+                <h1>Report</h1>
+                <div class="note-container"></div>
+                <div class="add-note">
+                    <div class="note-text" placeholder="Report your issues here"></div>
+                    <button class="add-button">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="notifications-column">
+            <i class="fa-solid fa-bell"></i>
+            <div>
+                <div>Scheduled</div>
+                <p>User Interfaces and experience</p>
+                <br>
+                <hr>
+                <p>30th January 2023&nbsp;&nbsp;&nbsp;13:00 - 14:00</p>
+            </div>
+            <div>
+                <h3>Personal supervisor meeting</h3>
+                <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;10:00 am - 10:30 am</p>
+                <p><i class="fa-solid fa-calendar-week"></i>&nbsp;&nbsp;Friday, 7th April 2023</p>
+                <div><p>Reschedule</p></div>
+            </div>
+            <div>
+                <h3>Instructors</h3>
+                <div>
+                    <p><img src="Images/Instructor.PNG" alt="Instructor Pic">Rafael Irizarry<br><span>Professor of Biostatistic - Harv...</span></p>
+                </div>
+                <br>
+                <hr>
+                <p>Company</p>
+                <br>
+                <p><a href="">Edx Organisation&nbsp;&nbsp;&nbsp;&nbsp;</a><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                <br>
+                <p>Timezone</p>
+                <br>
+                <p>BST 12:00 pm London, UK (GMT +1)</p>
+            </div>
+        </div>
+    </section>
+    <script src="report.js"></script>
     <script src="Modal.js"></script>
 </body>
 </html>

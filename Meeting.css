@@ -1,0 +1,93 @@
+:root {
+    --calender: rgba(250, 172, 168, 0.77);
+    --arrowcolor: #3E0EFF;
+    --trellogreen: #5aac44;
+    --lightpurple: rgba(221, 214, 243, 0.7);
+    --backgroundreport: linear-gradient(180deg, #EAE6FF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.report-container {
+    background: var(--backgroundreport);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    border: 1px solid red;
+}
+
+/* Container styles */
+.report-container {
+    display: flex;
+}
+
+/* Column styles */
+.availability-column,
+.report-column,
+.notifications-column {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Availability column styles */
+.availability-column h2 {
+    margin-top: 0;
+}
+
+/* Report column styles */
+.report-column {
+    background-color: #f2f2f2;
+}
+
+.report-column h1 {
+    margin-top: 0;
+}
+
+.note-container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.add-note {
+    display: flex;
+    align-items: center;
+}
+
+.note-text {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Notifications column styles */
+.notifications-column i {
+    font-size: 24px;
+}
+
+.notifications-column div {
+    margin-top: 10px;
+}
+
+.notifications-column hr {
+    margin: 10px 0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .report-container {
+        flex-direction: column;
+    }
+    
+    .availability-column,
+    .report-column,
+    .notifications-column {
+        padding: 10px;
+    }
+}
