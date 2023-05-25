@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="BrainBoost.css">
     <title>BrainBoost</title>
 </head>
 <body>
@@ -41,11 +42,6 @@
                         <li>
                             <div class="dropdown-box">
                                 <a href="Meeting.html">Meeting and Making Report</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown-box">
-                                <a href="Articles.html">Articles</a>
                             </div>
                         </li>
                         <li>
@@ -103,6 +99,51 @@
         </div>
         <!-- Get Started Modal Page Rendering Info End-->
     </div>
+    <section class="meditate-top-section">
+        <div class="top-section-container">
+            <div class="image-container">
+                <img src="Images/Purple girl meditating.png" alt="Girl Meditating">
+            </div>
+            <div class="text-container">
+                <h2>Let go of your thoughts and simply be present in this moment.</h2>
+            </div>
+        </div>
+    </section>
+    <section class="mid-section">
+        <div class="tabs">
+            <button class="tab active" onclick="changeTab(1)">Meditate</button>
+            <button class="tab" onclick="changeTab(2)">Sleep</button>
+            <button class="tab" onclick="changeTab(3)">Move</button>
+            <button class="tab" onclick="changeTab(4)">Focus</button>
+        </div>
+        <div class="tab-content">
+            <div class="content active">
+                <p>Learn to manage feelings and thoughts with the lifelong skill of everyday mindfulness, any time of the day.</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=O-6f5wQXSu8" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="content">
+                <p>Create the conditions for a more restful night’s sleep with sleepcasts, music, and other unique audio experiences.</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=wGdodz6ck7g" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="content">
+                <p>Train your body and mind at the same time with exercises to strengthen your mental and physical well-being.</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=6VFLKdfxA24" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="content">
+                <p>Get a clearer picture of what matters most with music and meditations designed to help boost your ability to focus.</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=La7n9J6ruZg" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <script src="Mindfulness.js"></script>
     <script src="Modal.js"></script>
 </body>
 </html>

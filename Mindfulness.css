@@ -1,0 +1,76 @@
+.meditate-top-section {
+    text-align: center;
+}
+
+.top-section-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mid-section {
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.tab {
+    background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 100%);
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    border: transparent;
+}
+
+.tab:hover {
+    color: aqua;
+}
+
+.tab-content {
+    background-image: url(Images/Mindfulness\ Background.png);
+    height: 500px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+    .top-section-container {
+        flex-direction: column;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+}
