@@ -1,0 +1,252 @@
+.top-section-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.well-being-left-container {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.well-being-right-container {
+    flex: 1;
+}
+
+.well-being-container {
+    text-align: left;
+}
+
+.well-being-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.well-being-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .top-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .well-being-left-container,
+    .well-being-right-container {
+        flex: 1;
+        width: 100%;
+    }
+
+    .well-being-left-container {
+        margin-bottom: 0;
+    }
+
+    .well-being-right-container {
+        margin-top: 20px;
+    }
+}
+
+.mid-section {
+    text-align: center;
+}
+
+.mid-section h2 {
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    flex-basis: calc(33.33% - 20px);
+    max-width: 300px;
+    margin: 0 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card-content {
+    /*position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 2;*/
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.card-content h3 {
+    margin-top: 50px;
+}
+
+.card-content p {
+    padding: 10px;
+    
+}
+
+.icon {
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.icon img {
+    border-radius: 10px;
+    width: 80px;
+    height: 65px;
+}
+
+.color-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    border-radius: 4px 4px 0 0;
+}
+
+.label-1 {
+    background-color: #FF7452;
+}
+
+.label-2 {
+    background-color: #2684FF;
+}
+
+.label-3 {
+    background-color: #57D9A3;
+}
+
+@media (max-width: 767px) {
+    .card {
+      height: auto;
+    }
+  
+    .card-content {
+      position: relative;
+      z-index: 2;
+      flex-grow: 1;
+    }
+  
+    .card-content p {
+      white-space: normal;
+    }
+}
+
+.well-being-before-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.before-bottom-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.before-bottom-container img {
+    width: 780px;
+    height: 680px;
+    margin-right: 100px;
+}
+
+.before-bottom-container > div {
+    text-align: left;
+}
+
+.before-bottom-container > div h2 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.before-bottom-container > div a {
+    display: inline-block;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 5vw;
+    text-decoration: none;
+    color: #0052cc;
+}
+
+.before-bottom-container > div a:hover {
+    color: #FF7452;
+}
+
+.before-bottom-container > div > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background: #FFEBDF;
+    height: 20vh;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.before-bottom-container > div > div i {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.before-bottom-container > div > div h3 {
+    margin-bottom: 5px;
+}
+
+.before-bottom-container > div > div p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .before-bottom-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .before-bottom-container img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
